@@ -1,0 +1,18 @@
+.input_field {
+  margin-bottom: 1rem;
+}
+
+.input_field:last-child {
+  margin-bottom: 0;
+}
+
+.fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.fielset_label {
+  display: block;
+  color: var(--blue);
+  margin-bottom: 1rem;
+}

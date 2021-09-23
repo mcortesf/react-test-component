@@ -1,0 +1,12 @@
+.container_flex {
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  flex-grow: 1;
+}
+
+.box:first-child {
+  margin-right: 10px;
+}

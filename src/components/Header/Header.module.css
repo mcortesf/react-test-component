@@ -1,0 +1,28 @@
+.header_container {
+  width: 100%;
+  background: var(--white-bg);
+  box-shadow: var(--default-shadow);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 1.125rem;
+  height: 3rem;
+  width: 100%;
+}
+
+.logo {
+  margin: 0 auto 0 0;
+  padding: 0;
+  width: 5rem;
+}
+
+.logo_img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.button_spacer {
+  margin-right: 1rem;
+}

@@ -1,0 +1,24 @@
+.home_container {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  grid-template-rows: 3rem 1fr 3rem;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  width: 100%;
+}
+
+.footer {
+  grid-area: footer;
+  background: var(--blue);
+}

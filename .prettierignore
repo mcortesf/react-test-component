@@ -1,0 +1,11 @@
+node_modules
+target
+build
+package-lock.json
+.git
+.mvn
+gradle
+.gradle
+.next
+azure-pipelines.yml
+src/assets

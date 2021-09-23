@@ -1,0 +1,18 @@
+server {
+    listen       VAR_PORT;
+    server_name  localhost;
+
+    add_header Referrer-Policy "no-referrer-when-downgrade";
+    add_header Content-Security-Policy "base-uri ; child-src  *.google.com *.google-analytics.com; font-src  *.gstatic.com; form-action ; frame-ancestors ; img-src ; object-src 'none';";
+
+    gzip on;
+    gzip_min_length 1000;
+    gzip_proxied expired no-cache no-store private auth;
+    gzip_types text/plain text/css application/json application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+
+    root   /usr/share/nginx/html;
+
+    location / {
+        try_files $uri $uri/ /index.html =404;
+    }
+}
